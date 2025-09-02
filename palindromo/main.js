@@ -2,7 +2,7 @@
 - Chiedere all’utente di inserire una parola
 - Creare una funzione per capire se la parola inserita è palindroma*/
 
-const palWord = prompt("Per favore, inserisci una parola:"); //Richiesta parola
+const palWord = prompt("Per favore, inserisci una parola:").toLowerCase(); //Richiesta parola
 
 function isPalindrome(word) { //Creazione della funzione
 
@@ -19,3 +19,4 @@ const newWord = isPalindrome(palWord); //Parola invertita ricavata dalla funzion
  } else {
     console.log("La parola" + " " + palWord + " " + "non è un palindromo")
  }
+
