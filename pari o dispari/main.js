@@ -38,12 +38,12 @@ function randomNum(min, max) { //Funzione di generazione casuale di un numero da
     return Math.floor(Math.random() * (max - min)) + min;
 
 }
-console.log("Il PC ha scelto" + " " + randomNum(1,5));
+console.log("Il PC ha scelto" + " " + numPc);
 
 const resultSum = numGiocatore + numPc; //Somma dei due numeri
 console.log("Il risultato della somma dei due numeri è" + " " + resultSum);
 
-const resultPoD = checkPariDispari(); 
+const resultPoD = checkPariDispari(resultSum); 
 
 function checkPariDispari(resultSum) { //Funzione per indentificare se il numero è pari o è dispari
 
@@ -64,7 +64,7 @@ if (sceltaGiocatore === resultPoD) { //Individuare e proclamare il vincitore
 
     } else {
         console.log("Ritenta, sarai più fortunato..")
-        
+
     }
 
 

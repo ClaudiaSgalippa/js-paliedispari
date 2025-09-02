@@ -15,8 +15,8 @@ function isPalindrome(word) { //Creazione della funzione
 const newWord = isPalindrome(palWord); //Parola invertita ricavata dalla funzione
 
  if (palWord === newWord) {
-    console.log("La parola" + " " + palWord + " " + "è un palindromo")
+    console.log("La parola " + palWord + " è un palindromo")
  } else {
-    console.log("La parola" + " " + palWord + " " + "non è un palindromo")
+    console.log("La parola " + palWord + " non è un palindromo")
  }
 
