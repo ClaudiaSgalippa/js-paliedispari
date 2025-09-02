@@ -19,7 +19,7 @@ Domande da  farsi quando si crea una funzione:
 2) Poniamo la scelta del numero da 1 a 5 ✓
 3) Generazione random da parte della CPU di un numero da 1 a 5 (con funzione) ✓
 4) Somma dei due numeri generati
-5) Impostare if/else in base alla parità o disparità del numero generato
+5) Impostare if/else in base alla parità o disparità del numero generato ✓
 6) Dichiarazione del vincitore */
 
 console.log("Giochiamo a pari o dispari!");
@@ -43,11 +43,11 @@ console.log("Il PC ha scelto" + " " + randomNum(1,5));
 const resultSum = numGiocatore + numPc; //Somma dei due numeri
 console.log("Il risultato della somma dei due numeri è" + " " + resultSum);
 
-const resultPoD = checkPariDispari();
+const resultPoD = checkPariDispari(); 
 
-function checkPariDispari(resultSum) {
+function checkPariDispari(resultSum) { //Funzione per indentificare se il numero è pari o è dispari
 
-    if (resultSum % 2 === 0) {
+    if (resultSum % 2 === 0) { 
         risultato = "pari";
 
     } else {
@@ -58,6 +58,19 @@ function checkPariDispari(resultSum) {
     return risultato
 }
 console.log("Il numero sommato è" + " " + resultPoD);
+
+if (sceltaGiocatore === resultPoD) { //Individuare e proclamare il vincitore
+        console.log("Complimenti, hai vinto!")
+
+    } else {
+        console.log("Ritenta, sarai più fortunato..")
+        
+    }
+
+
+
+
+
 
 
 
